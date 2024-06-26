@@ -6,7 +6,10 @@ i = cv2.imread("./image/bear.jpg")
 # Resize image to width=300, height=200
 resized = cv2.resize(i, (300, 200))
 
-# Flip image horizontally (mirror effect)
+# Flip image horizontally (mirror effect) 
+#0 = flips horizontal
+#1 = flips vertical
+#-1 = flips both horizontal and vertical
 flipped = cv2.flip(resized, 1)
 
 # Convert image to grayscale
